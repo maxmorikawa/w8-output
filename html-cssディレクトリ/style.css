@@ -12,7 +12,7 @@ body {
     border: 5px solid white;
     height: 100px;
     box-sizing: border-box;
-    /* border-radius: 5%; */
+    border-radius: 20px;
     display: block;
   }
   .grid1 > h1 {
