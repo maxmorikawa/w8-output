@@ -13,8 +13,8 @@ body {
   /*
 form
 */
-  .form{
-  }
+  /* .form{
+  } */
   .form-table {
     width: 100%;
     max-width: 500px;
@@ -23,7 +23,7 @@ form
 
   /* tbody {
   } */
-  .form-table tr{
+  .form-table tr {
     text-align: left;
   }
   .form-table th {
@@ -50,7 +50,6 @@ form
 button
 */
 
-
   .form-button {
     width: 100%;
     max-width: 500px;
@@ -68,7 +67,6 @@ button
     border: 2px solid blue;
     border-radius: 10px;
     /* text-align: center; */
-    bo
   }
 
   .sign-up {
@@ -76,6 +74,5 @@ button
     display: flex;
     max-width: 500px;
     text-align: center;
-    
   }
 }
