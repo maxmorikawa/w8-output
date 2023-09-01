@@ -8,37 +8,47 @@
     <link rel="stylesheet" href="./style0.css" />
   </head>
   <body>
-    <section class="section section-secondary">
-      <h1 class="section-headline">Sign in to your account</h1>
-
+    <section class="section-container">
+      <div class="section-headline-area">
+        <h1 class="section-headline">Sign in to your account</h1>
+      </div>
       <form class="form" action="">
         <table class="form-table">
-          <tr>
-            <th>
-              <label for="email"> Your email </label>
-            </th>
-          </tr>
-          <tr>
-            <td>
-              <input class="input" type="email" id="email" />
-            </td>
-          </tr>
-          <tr>
-            <th>
-              <label for="email"> Password </label>
-            </th>
-          </tr>
-          <tr>
-            <td>
-              <input class="input" type="password" id="password" />
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>
+                <label for="email"> Your email </label>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <input class="input" type="email" id="email" />
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email"> Password </label>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <input class="input" type="password" id="password" />
+              </td>
+            </tr>
+            <!-- <tr>
+              <td class="form-button-first">
+                <div class="form-button-second">
+                  <button class="button-submission" type="submit">
+                    Sign in
+                  </button>
+                </div>
+              </td>
+            </tr> -->
+          </tbody>
         </table>
 
         <div class="form-button">
-          <button class="button button-submission" type="submit">
-            Sign in
-          </button>
+          <button class="button-submission" type="submit">Sign in</button>
         </div>
       </form>
 
