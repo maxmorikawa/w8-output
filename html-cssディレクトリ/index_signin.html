@@ -22,7 +22,7 @@
             </tr>
             <tr>
               <td>
-                <input class="input" type="email" id="email" />
+                <input class="input" type="email" id="email" value="" />
               </td>
             </tr>
             <tr>
@@ -32,25 +32,18 @@
             </tr>
             <tr>
               <td>
-                <input class="input" type="password" id="password" />
+                <input class="input" type="password" id="password" value="" />
               </td>
             </tr>
-            <!-- <tr>
-              <td class="form-button-first">
-                <div class="form-button-second">
-                  <button class="button-submission" type="submit">
-                    Sign in
-                  </button>
-                </div>
-              </td>
-            </tr> -->
           </tbody>
         </table>
-
-        <div class="form-button">
-          <button class="button-submission" type="submit">Sign in</button>
-        </div>
       </form>
+
+      <div class="form-button">
+        <button class="button-submission" type="" onclick="load()">
+          Sign in
+        </button>
+      </div>
 
       <div class="sign-up">
         <p>
@@ -58,8 +51,14 @@
           <a href="./index_signup.html" class="sign-up-page"> Sign up </a>
         </p>
       </div>
+
+      <div class="form-button">
+        <button class="button-submission" type="" onclick="save()">
+          Sing up
+        </button>
+      </div>
     </section>
 
-    <script src="./app.js"></script>
+    <script src="./app_signin.js"></script>
   </body>
 </html>
