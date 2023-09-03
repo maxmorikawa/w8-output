@@ -15,7 +15,7 @@ function load() {
       console.log("データがありません");
     } else {
       console.log("OK");
-      window.location.href = "./index.html";
+      window.location.href = "./index_main.html";
     }
   }
 }
