@@ -14,37 +14,19 @@ if (loginHistory == 1) {
   document.getElementById("password-signin").value = registPass;
 }
 
-// 読込
-// function load() {
-//   const keyData = document.getElementById("email-signin").value; //keyData
-//   console.log("入力email:", keyData);
-//   const valueData = document.getElementById("password-signin").value; //入力Password
-//   console.log("入力password", valueData);
-
-//   if (keyData !== registEmail) {
-//     alert("データがありません");
-//   } else {
-//     if (valueData !== registPass) {
-//       alert("データがありません");
-//     } else {
-//       console.log("OK");
-//       localStorage.setItem("loginHistory", 1);
-//       // window.location.href = "./index_main.html";
-//     }
-//   }
-// }
-
 // 保存
 function save() {
-  const youremail = document.getElementById("email-signin").value;
-  const yourpassword = document.getElementById("password-signin").value;
-  if (!youremail || !yourpassword) {
+  const yourEmail = document.getElementById("email-signin").value; //入力email
+  const yourPassword = document.getElementById("password-signin").value; //入力password
+  if (!yourEmail || !yourPassword) {
     alert("emailとpasswordを入力してください");
+    document.getElementById("email-signin").value = "";
+    document.getElementById("password-signin").value = "";
   } else {
-    const array = [youremail, yourpassword];
+    const array = [yourEmail, yourPassword];
     const serializedArray = JSON.stringify(array);
     localStorage.setItem("youremail_pass", serializedArray);
-    console.log("OK");
+    console.log("Sign in OK");
     localStorage.setItem("loginHistory", 1);
   }
 }
